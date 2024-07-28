@@ -36,7 +36,7 @@ output "data_from_instance" {
   value = data.aws_instance.datasource.public_ip
 }
 
-** to create Security Group dynamically with help of the data source **
+**To create Security Group dynamically with help of the data source**
 data "aws_ip_ranges" "us_east_ip_ranges" {
   regions = ["us-east-1","us-east-1"]
   services = [ "ec2" ]
